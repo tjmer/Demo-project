@@ -2,9 +2,11 @@ Overview:
 Keep track of players and monsters health.  Also have some quick references to some items in the game.  You will need to run the server in the
 background to make it so it can save the players and monsters.
 
+![How it looks](https://drive.google.com/file/d/1S64X5T9CUminTeBgtQqOfWzHTFqU_dmM/view?usp=sharing)
+
 Technologies used:
--JavaScript
--Express
+- JavaScript
+- Express
 
 Features:
 - Able to add monsters and characters to a column each.
