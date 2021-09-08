@@ -7,6 +7,8 @@ background to make it so it can save the players and monsters.
 Technologies used:
 - JavaScript
 - Express
+- CSS
+- HTML
 
 Features:
 - Able to add monsters and characters to a column each.
