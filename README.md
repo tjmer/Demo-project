@@ -2,7 +2,7 @@ Overview:
 Keep track of players and monsters health.  Also have some quick references to some items in the game.  You will need to run the server in the
 background to make it so it can save the players and monsters.
 
-![How it looks](https://drive.google.com/file/d/1S64X5T9CUminTeBgtQqOfWzHTFqU_dmM/view?usp=sharing "true")
+![How it looks](https://drive.google.com/file/d/1Um6gtwqGN2q2FA3afIN45DYwtWItdKtx/view?usp=sharing)
 
 Technologies used:
 - JavaScript
