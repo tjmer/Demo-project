@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DnD Helper</title>
+</head>
+<body>
+    <header>    
+        <h1 id="page-title">DnD Helper</h1>
+    </header>
+    <section id="columns">
+        <section id="player-area">
+            <h2 class="column-title">Players</h2>
+            <form id="player-info">
+                <input id="character-name" type="text" placeholder="Player Name"/>
+                <input class="healthbar" id="character-hp" type="number" placeholder="Hit Points"/>
+                <button>Add</button>
+            </form>
+            <section id="player-preview"></section>
+        </section>
+        <section id="monster-area">
+            <h2 class="column-title">Monsters</h2>
+            <form id="monster-info">
+                <input id="monster-name" type="text" placeholder="Monster/Number"/>
+                <input class="healthbar" id="monster-hp" type="number"placeholder="Hit Points"/>
+                <button>Add</button>
+            </form>
+            <section id="monster-preview"></section>
+        </section>
+        <section id="weapon-types">
+            <h2 class="column-title"">Weapon info</h2>
+            <section id="melee-weapons">
+                <h4 class="sword-list">Swords</h4>
+                <select id="sword-input">
+                    <option value="0">Select</option>
+                    <option value="greatsword">Greatsword</option>
+                    <option value="longsword">Longsword</option>
+                    <option value="shortsword">Shortsword</option>
+                    <option value="scimitar">Scimitar</option>
+                </select>
+                <button id="sword-button">Submit</button>
+                <section id="sword-info" class="item-info"></section>
+            </section>
+            <section id="ranged weapons">
+                <h4 class = "sword-list">Bows</h4>
+                <select id="bows-input">
+                    <option value="0">Select</option>
+                    <option value="longbow">Longbow</option>
+                    <option value="crossbow-hand">Hand Crossbow</option>
+                    <option value="crossbow-heavy">Heavy Crossbow</option>
+                </select>
+                <button id="bow-button">Submit</button>
+                <section id="bow-box" class="item-info"></section>
+            </section>
+        </section>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script>  
+</body>
+</html>
