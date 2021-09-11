@@ -15,18 +15,25 @@ function submitPlayer(e){
     let name = document.querySelector('#character-name')
     let health = document.querySelector('#character-hp')
 
-    let playerObj = {
-        name: name.value,
-        health: health.value
+    if (name.value === '' && health.value <= 0){
+        alert("Need to input name and positive health")
+    }else if (name.value === '' || health.value <= 0){
+        alert("You are missing some info or have negetive health")
+    }else {
+
+        
+        let playerObj = {
+            name: name.value,
+            health: health.value
+        }
+        
+        addPlayer(playerObj)
+        name.value = ''
+        health.value = ''
+        
     }
-
-    addPlayer(playerObj)
-
-    name.value = ''
-    health.value = ''
-    
 }
-
+    
 function displayPlayers(arr){
     playerPreview.innerHTML = ''
     for(let i = 0; i < arr.length; i++){
@@ -37,8 +44,8 @@ function displayPlayers(arr){
 function showPlayers(players){
     const playerCard = document.createElement('div')
 
-    playerCard.innerHTML = `<section class = "box"><h2>${players.name}</h2>
-    <h3>Health: ${players.health}</h3>
+    playerCard.innerHTML = `<section class = "box"><p class ="character-name">${players.name}</p>
+    <p>Health: ${players.health}</p>
     <section class = "card-buttons">
     <button onclick = 'updateHp(${players.id}, "minus")'>-</button>
     <button onclick='deletePlayer(${players.id})'>Delete</button>
@@ -67,15 +74,23 @@ function createMonster(e){
     let mName = document.querySelector('#monster-name')
     let mHp = document.querySelector('#monster-hp')
 
-    let monsterObj = {
-        name: mName.value,
-        health: mHp.value
+    if(mName.value === '' && mHp.value <= 0){
+        alert("Need to input name and positive number")
+    }else if(mName.value === '' || mHp.value <= 0){
+        alert("Need to input a name or positive number.")
+    }else {
+
+        
+        let monsterObj = {
+            name: mName.value,
+            health: mHp.value
+        }
+        
+        moreMonsters(monsterObj)
+        
+        mName.value = ''
+        mHp.value = ''
     }
-
-    moreMonsters(monsterObj)
-
-    mName.value = ''
-    mHp.value = ''
 
 }
 
@@ -89,8 +104,8 @@ function showMonsters(arr){
 function monsterPlates(monsters){
     const monsterCard = document.createElement('div')
 
-    monsterCard.innerHTML = `<section class = 'box'><h2>${monsters.name}</h2>
-    <h3>Health: ${monsters.health}</h3>
+    monsterCard.innerHTML = `<section class = 'box'><p class = "character-name">${monsters.name}</p>
+    <p>Health: ${monsters.health}</p>
     <section class = "card-buttons">
     <button onclick = "healthChange(${monsters.id}, 'minus')">-</button>
     <button onclick = "removeMonster(${monsters.id})">Delete</button>
@@ -123,15 +138,21 @@ function swordDetails (req, res){
             const weaponDice = document.createElement('p')
             const weaponType = document.createElement('p')
 
+            const meleeBox = document.createElement('div')
+
             weaponName.textContent = name
             weaponCat.textContent = ("Category: " + cat)
             weaponDice.textContent = ("Dice: " + dice)
             weaponType.textContent = ("Damage type: " + type)
 
-            swordBox.appendChild(weaponName)
-            swordBox.appendChild(weaponCat)
-            swordBox.appendChild(weaponDice)
-            swordBox.appendChild(weaponType)
+            meleeBox.appendChild(weaponName)
+            meleeBox.appendChild(weaponCat)
+            meleeBox.appendChild(weaponDice)
+            meleeBox.appendChild(weaponType)
+
+            meleeBox.className += "box"
+
+            swordBox.appendChild(meleeBox)
 
             swordInput.value = 0
         })
