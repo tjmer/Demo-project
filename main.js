@@ -181,20 +181,27 @@ function bowDetails(req, res){
             const cat = res.data.weapon_category
             const dice = res.data.damage.damage_dice
             const type = res.data.damage.damage_type.name
-            const rangedName = document.createElement('h3')
+            const rangedName = document.createElement('p')
             const rangedCat = document.createElement('p')
             const rangedDice = document.createElement('p')
             const rangedType = document.createElement('p')
+
+            const bowBox = document.createElement('div')
 
             rangedName.textContent = name
             rangedCat.textContent = ("Category: " + cat)
             rangedDice.textContent= ("Dice: " + dice)
             rangedType.textContent= ("Damage type: " + type)
 
-            rangedBox.appendChild(rangedName)
-            rangedBox.appendChild(rangedCat)
-            rangedBox.appendChild(rangedDice)
-            rangedBox.appendChild(rangedType)
+            bowBox.appendChild(rangedName)
+            bowBox.appendChild(rangedCat)
+            bowBox.appendChild(rangedDice)
+            bowBox.appendChild(rangedType)
+
+            rangedName.className += "character-name"
+            bowBox.className += 'weapon-box'
+
+            rangedBox.appendChild(bowBox)
 
             rangedInput.value = 0
         })
