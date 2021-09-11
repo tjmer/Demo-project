@@ -1,3 +1,11 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: brown;
+    height: 2.5rem;
+}
+
 .header-button {
     color: blue;
 }
