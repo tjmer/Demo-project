@@ -11,9 +11,13 @@ header {
 }
 
 .header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 10rem;
     height: 1.6rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fantasy;
+    font-size: larger;
     transition: all .5s ease-in-out;
     border-radius: 2rem;
 }
@@ -23,6 +27,9 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.header-button {
-    color: blue;
+
+button:hover{
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
 }
