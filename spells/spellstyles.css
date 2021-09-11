@@ -1,9 +1,26 @@
+*{
+    margin: 0;
+}
+
 header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: brown;
     height: 2.5rem;
+}
+
+.header-button {
+    width: 10rem;
+    height: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .5s ease-in-out;
+    border-radius: 2rem;
+}
+
+#page-title {
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-button {

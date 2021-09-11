@@ -28,6 +28,14 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.header-button {
+    width: 10rem;
+    height: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all .5s ease-in-out;
+    border-radius: 2rem;
+}
+
 .column-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
