@@ -51,6 +51,8 @@ header {
     height: 40px;
 }
 
+/* Player and monster cards */
+
 .box {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: darkgray;
@@ -60,7 +62,13 @@ header {
     margin-bottom: 5px;
     margin-top: 5px;
     border-radius: 50%;
-    line-height: .6;
+    line-height: .1;
+}
+
+.character-name {
+    font-size: larger;
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 #sword-info, .item-info {
