@@ -133,7 +133,7 @@ function swordDetails (req, res){
             const cat = res.data.weapon_category
             const dice = res.data.damage.damage_dice
             const type = res.data.damage.damage_type.name
-            const weaponName = document.createElement('h3')
+            const weaponName = document.createElement('p')
             const weaponCat = document.createElement('p')
             const weaponDice = document.createElement('p')
             const weaponType = document.createElement('p')
@@ -150,7 +150,8 @@ function swordDetails (req, res){
             meleeBox.appendChild(weaponDice)
             meleeBox.appendChild(weaponType)
 
-            meleeBox.className += "box"
+            weaponName.className += "character-name"
+            meleeBox.className += "weapon-box"
 
             swordBox.appendChild(meleeBox)
 
