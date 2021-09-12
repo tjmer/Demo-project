@@ -21,4 +21,5 @@ Features:
 - Able to add monsters and characters to a column each.
 - Able to add and subtract their health.
 - Can remove monsters and characters from each list
-- Can look up some besic info on some weapons in dnd.
+- Can look up some besic info on weapons in dnd.
+- Get information on spells
