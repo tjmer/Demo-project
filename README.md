@@ -4,14 +4,14 @@ background to make it so it can save the players and monsters.
 -----------------------------------------------------------------
 
 ![How it looks](https://user-images.githubusercontent.com/87672900/132590763-fd45b38d-a400-47e8-80d9-43c2a911c40f.png)
---------
+
+
+
 Technologies used:
 - JavaScript
 - Express
 - CSS
 - HTML
-
-_________________________________________________________________
 
 Features:
 - Able to add monsters and characters to a column each.
