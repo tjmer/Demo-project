@@ -1,4 +1,4 @@
-<h1 align="center">The Dnd Helper readme</h1>
+<h1 align="center">The Dnd DM Helper readme</h1>
 
 
 <h3 align="center">Overview</h3>
