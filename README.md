@@ -12,7 +12,7 @@ background to make it so it can save the players and monsters.
 
 ---
 
-<h3 align="center">Technologies used</h3>
+<h3 align="center">Technologies</h3>
 
 - JavaScript
 - Express
