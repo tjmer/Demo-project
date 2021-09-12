@@ -9,7 +9,7 @@ background to make it so it can save the players and monsters.
 
 ---
 
-Technologies used:
+<h3 align="center">Technologies used</h3>
 - JavaScript
 - Express
 - CSS
@@ -17,7 +17,7 @@ Technologies used:
 
 ---
 
-Features:
+<h3 align="center">Features</h3>
 - Able to add monsters and characters to a column each.
 - Able to add and subtract their health.
 - Can remove monsters and characters from each list
